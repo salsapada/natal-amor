@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal da Minha Princesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="snow">
+        <span class="snowflake" style="left: 10%; animation-delay: 0s; --offsetX: -10px;">❄</span>
+        <span class="snowflake" style="left: 30%; animation-delay: 2s; --offsetX: 5px;">❄</span>
+        <span class="snowflake" style="left: 50%; animation-delay: 4s; --offsetX: -15px;">❄</span>
+        <span class="snowflake" style="left: 70%; animation-delay: 6s; --offsetX: 20px;">❄</span>
+        <span class="snowflake" style="left: 90%; animation-delay: 8s; --offsetX: -5px;">❄</span>
+    </div>
+
+    <header>
+        Natal da Minha Princesa
+    </header>
+    <audio id="background-music" src="natalina.mp3" loop></audio>
+
+    <button onclick="playMusic()">Clique para ouvir a música</button>
+    <div>
+        <button onclick="adjustVolume('increase')">Aumentar Volume</button>
+        <button onclick="adjustVolume('decrease')">Diminuir Volume</button>
+        </div>
+    <section class="main-content">
+        <h1>Feliz Natal, Meu Amor! 🎄</h1>
+        <p>Este site é um presente especial para você, porque você é a pessoa mais especial da minha vida. 💖</p>
+        <a href="#memories" class="btn">Galeria de Memórias</a>
+        <a href="#reasons" class="btn">Razões Para Te Amar</a>
+        <a href="#playlist" class="btn">Nossa Playlist</a>
+        <a href="#carta" class="btn">Presentes de Amor</a>
+    </section>
+
+
+    <section id="memories">
+        <h2>Galeria de Memórias</h2>
+        <p>Aqui estão momentos inesquecíveis que compartilhamos juntos:</p>
+
+        <figure>
+            <img src="forte.jpg" alt="Momento 1" style="width: 100%; max-width: 500px;">
+            <figcaption>Eu forte com minha cachinhos</figcaption>
+        </figure>
+
+        <figure>
+            <img src="mandrake.jpg" alt="Momento 2" style="width: 100%; max-width: 500px;">
+            <figcaption>Nossa foto estilo noia ksksks</figcaption>
+        </figure>
+
+        <figure>
+            <img src="molhados.jpg" alt="Momento 3" style="width: 100%; max-width: 500px;">
+            <figcaption>Molhados após um dia na represa com o neném</figcaption>
+        </figure>
+
+        <figure>
+            <img src="lindos.jpg" alt="Momento 4" style="width: 100%; max-width: 500px;">
+            <figcaption>Nosso sorriso mais lindo juntos</figcaption>
+        </figure>
+
+        <figure>
+            <img src="oculos.jpg" alt="Momento 5" style="width: 100%; max-width: 500px;">
+            <figcaption>Usando óculos finalmente né ksksks</figcaption>
+        </figure>
+
+        <figure>
+            <img src="pezinho.jpg" alt="Momento 6" style="width: 100%; max-width: 500px;">
+            <figcaption>seu pezinho pequeno lindo ao lado do meu</figcaption>
+        </figure>
+
+        <figure>
+            <img src="sorrisinho.jpg" alt="Momento 7" style="width: 100%; max-width: 500px;">
+            <figcaption>O sorrisinho que sempre me derrete</figcaption>
+        </figure>
+
+        <figure>
+            <img src="pintados.jpg" alt="Momento 8" style="width: 100%; max-width: 500px;">
+            <figcaption>Nosso momentos pintados com diversao moh</figcaption>
+        </figure>
+
+        <figure>
+            <img src="sol.jpg" alt="Momento 9" style="width: 100%; max-width: 500px;">
+            <figcaption>O brilho do sol refletido na nossa cara</figcaption>
+        </figure>
+
+    </section>
+
+    </section>
+
+    <section id="reasons" class="content-section">
+        <h2>Razões Para Te Amar</h2>
+        <ul>
+            <li>🌟 Você ilumina meus dias.</li>
+            <li>🌟 Seu sorriso é meu porto seguro.</li>
+            <li>🌟 Você me ensina a ser uma pessoa melhor.</li>
+            <li>🌟 Seu abraço faz tudo ficar bem.</li>
+            <li>🌟 Você é meu maior incentivador.</li>
+            <li>🌟 Com você, todos os momentos são especiais.</li>
+            <li>🌟 Sua bondade é inspiradora.</li>
+            <li>🌟 Seu jeito único de ver o mundo me encanta.</li>
+            <li>🌟 Você me entende como ninguém.</li>
+            <li>🌟 Seu amor é meu maior presente.</li>
+        </ul>
+    </section>
+
+    <section id="playlist" class="content-section">
+        <h2>Nossa Playlist</h2>
+        <p>Essas músicas sempre me fazem lembrar de você:</p>
+        <ul>
+            <li id="cola"><a href="https://youtu.be/e5Ct8ZW_rcs?si=XIHg7W7bRuS2U4Gr" target="_blank">quer ficar
+                    coladinha em mim?</a></li><br>
+            <li id="condo"><a href="https://youtu.be/AwA-rWdPi-g?si=mVPRd9Sjw2xD7Ej0" target="_blank">quer ser minha
+                    mina de condominio</a></li><br>
+            <li id="pre"><a href="https://youtu.be/mvWXaz0Gtbo?si=M_mfunN7E48IUID3" target="_blank">topa acordar o
+                    predio juntos?</a></li><br>
+        </ul>
+    </section>
+
+    <!-- Carta de Amor Interativa -->
+    <section id="carta">
+        <h2>Presentes de Amor</h2>
+        <p>Clique nos presentes para descobrir trechos da minha mensagem de amor para você!</p>
+
+        <div class="gifts">
+            <div class="gift" onclick="revealMessage('msg1')">
+                <img src="presente.png" alt="Presente 1">
+            </div>
+            <div class="gift" onclick="revealMessage('msg2')">
+                <img src="presente.png" alt="Presente 2">
+            </div>
+            <div class="gift" onclick="revealMessage('msg3')">
+                <img src="presente.png" alt="Presente 3">
+            </div>
+            <div class="gift" onclick="revealMessage('msg4')">
+                <img src="presente.png" alt="Presente 4">
+            </div>
+        </div>
+
+        <div class="message">
+            <p id="msg1" class="hidden">"Você é a razão do meu sorriso diário, cada dia ao seu lado é um presente que
+                nunca me canso de agradecer"</p>
+            <p id="msg2" class="hidden">"A cada sorriso seu o mundo se ilumina mais um pouco, continue assim minha gata"
+            </p>
+            <p id="msg3" class="hidden">"No seu colo encontro meu abrigo, me sinto seguro e protegido lá"</p>
+            <p id="msg4" class="hidden">"Você é como um jardim de flores, </p>
+        </div>
+    </section>
+
+    <audio id="audio" src="abertura.mp3" preload="auto"></audio>
+
+    <section id="navegacao">
+      
+        
+        <a href="index2.html" class="btn">Pronta pra proxima surpresa??</a>
+    
+        <!-- Botão para voltar à página anterior -->
+        <a href="index.html" class="btn">Voltar para a página anterior</a>
+    </section>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

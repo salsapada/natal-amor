@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação - Natal da Minha Princesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="snow">
+        <span class="snowflake" style="left: 10%; animation-delay: 0s; --offsetX: -10px;">❄</span>
+        <span class="snowflake" style="left: 30%; animation-delay: 2s; --offsetX: 5px;">❄</span>
+        <span class="snowflake" style="left: 50%; animation-delay: 4s; --offsetX: -15px;">❄</span>
+        <span class="snowflake" style="left: 70%; animation-delay: 6s; --offsetX: 20px;">❄</span>
+        <span class="snowflake" style="left: 90%; animation-delay: 8s; --offsetX: -5px;">❄</span>
+    </div>
+
+    <header>
+        Continuação do Natal da Minha Princesa
+    </header>
+    <audio id="background-music" src="natalina.mp3" loop></audio>
+
+    <button onclick="playMusic()">Clique para ouvir a música</button>
+    <div>
+        <button onclick="adjustVolume('increase')">Aumentar Volume</button>
+        <button onclick="adjustVolume('decrease')">Diminuir Volume</button>
+    </div>
+    <section class="main-content">
+        <h1>Bem-vinda de volta, meu amor!</h1>
+        <p>Agora vamos continuar com nossa jornada de amor e surpresas. ❤️</p>
+        <a href="#quiz" class="btn">Enigmas do Nosso Relacionamento</a>
+        <a href="#textinho" class="btn">Para Você, Meu Amor</a>
+    </section>
+
+    <section id="quiz">
+        <h2 id="blue">Enigmas do Nosso Relacionamento</h2>
+        <p id="red">Responda essas perguntas sobre nós dois! 😊</p>
+        <form id="quiz-form">
+            <div>
+                <label for="q1">Qual foi o nosso primeiro lugar que visitamos juntos?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div>
+                <label for="q2">Qual meu filme favorito?</label>
+                <input type="text" id="q2" name="q2" required>
+            </div>
+            <div>
+                <label for="q3">Na onde foi nosso primeiro encontro?</label>
+                <input type="text" id="q3" name="q3" required>
+            </div>
+            <div>
+                <label for="q4">onde a gnt vai se casar?</label>
+                <input type="text" id="q4" name="q4" required>
+            </div>
+            <button type="button" onclick="checkAnswers()">Enviar Respostas</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <section id="textinho">
+        <h2>Para Você, Meu Amor</h2>
+        <p>Desde o momento em que te conheci, meu mundo ficou mais colorido bb. Cada sorriso seu é como um raio de sol
+            iluminando os meus dias(amo seu sorriso), e cada palavra sua é uma melodia que embala o meu coração. Eu não
+            imagino a vida sem você ao meu lado, porque você é a melhor parte de mim moh ❤️</p>
+        <p>Eu sou grato por cada momento ao seu lado, por cada risada, por cada olhar cheio de amor minha gatona. Com
+            você, eu aprendi que o amor verdadeiro é feito de pequenos gestos, de carinho, de cuidado e de respeito
+            mútuo. Vc é a minha razão de sorrir todos os dias e a pessoa com quem quero compartilhar todos os meus
+            sonhos e mt mais bb</p>
+        <p>Te amo mais do que palavras podem expressar, e sou eternamente grato por ter você na minha vida, vc me
+            completa meu lindo pedacinho do céu 💖</p>
+        <button id="alerta" onclick="mostrarAlerta()">Clique para um sorriso</button>
+    </section>
+    <section id="navegacao">
+        <a href="index.html" class="btn" id="voltar">Voltar para a página anterior</a>
+    </section>
+
+
+
+    <footer>
+        <p>Feliz Natal meu docinho de coco!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

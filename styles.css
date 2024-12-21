@@ -1,0 +1,599 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('banner.jpeg');
+    background-size: cover; /* Mantém a imagem proporcional ao fundo */
+    background-position: center;
+    background-attachment: fixed; /* Adiciona o efeito de fixação */
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 60px;
+}
+
+/* Snowflake animation */
+.snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+.snowflake {
+    position: absolute;
+    top: -10%;
+    font-size: 2em;
+    opacity: 0.8;
+    color: #ffffff;
+    animation: fall 10s linear infinite;
+}
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 0.8;
+    }
+    100% {
+        top: 110%;
+        opacity: 0;
+    }
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 111, 97, 0.8);
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+/* Main content section */
+.main-content {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* Alterei o fundo para uma cor escura semitransparente */
+    color: white;
+    margin: 20px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.main-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.main-content .btn {
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.main-content .btn:hover {
+    background-color: #e05f52;
+}
+
+/* Section styles */
+.content-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Alterei o fundo para uma cor escura semitransparente */
+    padding: 40px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.content-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.content-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.content-section ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Image styling */
+.content-section img {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Estilo para os links de cada música */
+#cola {
+    color: #811a5f; /* Cor para 'Coladinho em Mim' */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#condo {
+    color: rgb(252, 252, 99); /* Cor para 'Mina do Condomínio' */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#pre {
+    color: #ff6f61; /* Cor para 'Acordar o Prédio' */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover para todos os links */
+#cola:hover, #condo:hover, #pre:hover {
+    color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do link suavemente */
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+/* Efeito de transição suave para a cor e o efeito de hover */
+#cola, #condo, #pre {
+    transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Sombra sutil para o texto */
+#cola, #condo, #pre {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de fundo suave ao passar o mouse */
+#cola:hover {
+    background-color: rgba(129, 26, 95, 0.2); /* Fundo suave para 'Coladinho em Mim' */
+}
+#condo:hover {
+    background-color: rgba(252, 252, 99, 0.2); /* Fundo suave para 'Mina do Condomínio' */
+}
+#pre:hover {
+    background-color: rgba(255, 111, 97, 0.2); /* Fundo suave para 'Acordar o Prédio' */
+}
+figure {
+    text-align: center; /* Centraliza a imagem e a legenda */
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 1em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente para melhor legibilidade */
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-style: italic; /* Dá um efeito de itálico à legenda */
+}
+
+figure img {
+    width: 100%;
+    max-width: 500px; /* Limita o tamanho máximo da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+#memories {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    padding: 20px;
+}
+
+#memories h2, #memories p {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+#memories figure {
+    display: inline-block; /* Faz com que as imagens e legendas fiquem na mesma linha */
+    margin: 15px; /* Espaçamento entre as figuras */
+}
+
+#memories img {
+    width: 100%;
+    max-width: 500px; /* Limita o tamanho máximo das imagens */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+/* Carta de Amor Interativa */
+#carta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#carta h2 {
+    color: #d84e77;
+}
+
+#carta p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.gifts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gift {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.gift img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.gift:hover img {
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+.message p {
+    background-color: #f7d2d2;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.message p.revealed {
+    opacity: 1;
+}
+#navegacao {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#navegacao .btn {
+    background-color: #ff6f61; /* Cor personalizada do botão */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin: 10px;
+}
+
+#navegacao .btn:hover {
+    background-color: #ff5a4f; /* Cor do botão quando passar o mouse */
+}
+
+#navegacao .btn:first-child {
+    background-color: #4CAF50; /* Cor para o botão de "Ir para a próxima página" */
+}
+
+#navegacao .btn:first-child:hover {
+    background-color: #45a049; /* Cor para o botão de "Ir para a próxima página" no hover */
+}
+
+#navegacao .btn:last-child {
+    background-color: #008CBA; /* Cor para o botão de "Voltar" */
+}
+
+#navegacao .btn:last-child:hover {
+    background-color: #007bb5; /* Cor para o botão de "Voltar" no hover */
+}
+
+#blue {
+    text-align: center;
+    font-size: 18px;
+    color: #3917b3 !important;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Sombra suave no texto */
+    padding: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Garantir a cor cinza para p com sombra para destacar */
+#red {
+    text-align: center;
+    font-size: 18px;
+    color: #4d59ff !important; /* Cor cinza claro */
+    text-shadow: 1px 1px 3px rgb(0, 0, 0); /* Sombra no texto */
+}
+
+/* Estilos para o formulário */
+#quiz-form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-form div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Resultados */
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #1da4ff;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de ir e voltar */
+#navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#navigation-buttons a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#navigation-buttons a:hover {
+    background-color: #007B9A;
+}
+/* Estilos gerais para os botões */
+button {
+    background-color: #ff6f61; /* Cor personalizada do botão */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    width: 100%; /* Largura do botão para preencher o espaço disponível */
+    max-width: 150px; /* Limita a largura máxima */
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: #e05f52;
+    transform: scale(1.05);
+}
+
+/* Efeito de foco para melhorar a acessibilidade */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.8); /* Destaque para quando o botão estiver focado */
+}
+
+/* Estilos para o controle fixo de música no canto inferior direito */
+#music-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column; /* Organiza os botões na coluna */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo do botão de play no controle fixo */
+#music-controls button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Largura do botão para preenchimento */
+    max-width: 150px; /* Limita a largura máxima */
+}
+
+/* Efeito de hover e clique para o botão de play */
+#music-controls button:hover {
+    background-color: #e05f52;
+    transform: scale(1.05);
+}
+
+#music-controls button:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+/* Controle de volume */
+#volume-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ocupa toda a largura disponível */
+    gap: 10px; /* Espaço entre os botões de volume */
+}
+
+#volume-controls button {
+    background-color: #4CAF50;
+    width: 48%; /* Largura de cada botão */
+}
+
+#volume-controls button:hover {
+    background-color: #45a049;
+}
+
+/* Esconde o elemento de áudio */
+#background-music {
+    display: none;
+}
+
+/* Tooltip para o controle de volume */
+#volume-controls button::after {
+    content: 'Ajuste o volume';
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#volume-controls button:hover::after {
+    opacity: 1;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+#textinho {
+    background-color: #ffe0e0; /* Fundo suave e romântico */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#textinho h2 {
+    font-size: 2rem;
+    color: #ff6f61; /* Cor do título */
+    margin-bottom: 15px;
+}
+
+#textinho p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#textinho p:last-child {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #ff6f61; /* Destacar a última mensagem */
+}
+
+#textinho p:hover {
+    color: #ff6f61;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+#voltar {
+    background-color: #4CAF50;
+}
+#alerta {
+    background-color: #ff8c42;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; /* Posiciona o botão fora do fluxo normal */
+    left: 20px; /* Coloca o botão no lado esquerdo da seção */
+    bottom: 20px; /* Deixa o botão 20px acima da borda inferior */
+}
+
+#alerta:hover {
+    background-color: #e05f52;
+    transform: scale(1.05);
+}
+
+#alerta:active {
+    transform: scale(0.98);
+}
